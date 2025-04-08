@@ -11,8 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: patch-me-see-overlays
-    repoURL: https://github.com/redhat-composer-ai/cluster-gitops.git  # Update me on fork
+    path: clusters/overlays/demo.redhat.com
+    repoURL: https://github.com/lcoronad/cluster-gitops.git
     targetRevision: main
   syncPolicy:
     automated:
