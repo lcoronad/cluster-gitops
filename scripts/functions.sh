@@ -294,7 +294,7 @@ check_repo(){
     echo "yq could not be found.  We are unable to verify the repo."
   else
 
-    GIT_REPO=$(git config --get remote.origin.url)
+    GIT_REPO=https://github.com/lcoronad/cluster-gitops.git
     GIT_REPO_BASENAME=$(get_git_basename ${GIT_REPO})
     APP_REPO=$(yq -r "${APP_PATCH_PATH}" ${APP_PATCH_FILE})
     APP_REPO_BASENAME=$(get_git_basename ${APP_REPO})
