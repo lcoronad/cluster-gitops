@@ -5,7 +5,7 @@ metadata:
   namespace: composer-ai-gitops
 spec:
   sources:
-    - repoURL: https://github.com/redhat-composer-ai/appOfApps.git
+    - repoURL: https://github.com/lcoronad/appOfApps.git
       path: appOfApps
       targetRevision: main
       helm:
@@ -16,6 +16,6 @@ spec:
             value: ${SUB_DOMAIN}
         valueFiles:
           - $values/appOfApps/values-lab.yaml
-    - repoURL: 'https://github.com/redhat-composer-ai/appOfApps.git'
+    - repoURL: 'https://github.com/lcoronad/appOfApps.git'
       targetRevision: main
       ref: values

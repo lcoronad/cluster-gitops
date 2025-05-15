@@ -10,7 +10,7 @@ spec:
   destination:
     server: 'https://kubernetes.default.svc'
   sources:
-    - repoURL: https://github.com/redhat-composer-ai/appOfApps.git
+    - repoURL: https://github.com/lcoronad/appOfApps.git
       path: appOfApps
       targetRevision: main
       helm:
